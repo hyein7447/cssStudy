@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>display 표시속성</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* display:inline-block과 함께 사용하는 단골속성 */
+        /* text-align 수평정렬 left center right */
+        /* text-aling 인라인요소에만 적용가능하다. */
+        /* 인라인 자식요소를 가지고 있는 부모 요소에 text-aling을 적용해서 수평정렬을 시킨다.*/
+        h1 {
+            background-color: yellow;
+            text-align: center;
+            
+        }
+        p {
+            background-color: rgb(205, 203, 255);
+            /* 1. em을 가운데 정렬하고 싶다. */
+            /* 2. em은 인라인이고 그 부모는 p이다. */
+            /* 3. 인라인의 부모 p에게 text-aling으로 정렬시킨다. */
+            /* text-align: right; */
+        }
+        p em {
+            background-color: aqua;
+            display: block;
+        }
+        .box {
+            background-color: tomato;
+            text-align: center;
+        }
+        .box li {
+            background-color: pink;
+            display:inline-block;
+        }
+        .wrap {
+            background-color: rgb(255, 152, 255);
+        }
+        .wrap dt {
+            background-color: rgb(255, 143, 62);
+            text-align: right;
+        }
+        .wrap dd {
+            background-color: rgb(94, 215, 255);
+            text-align: center;
+        }
+        .wrap dd span {
+            background-color: rgb(255, 255, 000);
+        }
+        /* 네이버 우측 로그인 */
+        #login_wrap {
+            background-color: tomato;
+            text-align: center;
+        }
+        #login_wrap p {
+            background-color: pink;
+        }
+        #login_wrap .login {
+            background-color: #03c75a;
+            display: block;
+        }
+        #login_wrap .id_pw_search_join {
+            background-color: aqua;
+        }
+        #login_wrap .id_pw_search_join a {
+            background-color: orange;
+        }
+        /* bnr box */
+        .bnr {
+            background-color: aqua;
+            text-align: center;
+        }
+        .bnr .category {
+            background-color: #eef3ff;
+            display: inline-block;
+        }
+        .bnr h2 {
+            color: #ffff;
+            background-color: blue;
+        }
+        .bnr .contents {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>block tag</h1>
+    <p><em>inline tag</em></p>
+    <ul class="box">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <dl class="wrap">
+        <dt>제목</dt>
+        <dd><span>내용</span></dd>
+    </dl>
+    <hr>
+    <!-- 네이버 우측 로그인 -->
+    <section id="login_wrap">
+        <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+        <a href="#" class="login">NAVER 로그인</a>
+        <div class="id_pw_search_join">
+            <a href="#">아이디 찾기</a>
+            <a href="#">비밀번호 찾기</a>
+            <a href="#">회원가입</a>
+        </div>
+    </section>
+    <hr>
+    <div class="bnr">
+        <p class="category">복지<!-- #eef3ff -->
+        <h2>호텔/콘도/리조트</h2>
+        <p class="contents">
+            회원님만을 위한<br>
+            호텔/콘도/리조트 혜택
+        </p>
+        </p>
+    </div>
+</body>
+</html>

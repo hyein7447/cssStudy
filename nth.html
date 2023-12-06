@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>nth 수열선택자</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .box h1 {background-color: aqua;}
+        .box p:nth-child(2) {background-color: pink;}
+        .box p:nth-child(3) {background-color: yellow;}
+        .box p:nth-child(4) {background-color: blue;}
+
+        .box p:nth-of-type(1) {border:2px solid #000;}
+        .box p:nth-of-type(2) {border:1px solid #f1f1f1}
+        
+        .box h1:first-child {color:red;}
+        .box p:first-of-type {color:blue;}
+
+        .box p:nth-last-child(2) {font-size: 2rem;}
+
+        ul {}
+        ul li {
+            border: 1px solid #555;
+            width: 200px; height: 200px;
+            display: inline-block;
+        }
+        /* ul li:first-child {border-width: 5px;}
+        /* ul li:nth-last-child(4) {border-color: red; border-width: 5px;} /* 뒤에서 4번째 */
+        /* ul li:nth-child(even) {background-color: beige;} *//* 짝수 */
+        /* ul li:nth-child(odd) {background-color: aqua;} */ /* 홀수 */
+        /* ul li:nth-child(4n) {background-color: yellow;}  *//* 4의배수 */
+        /* ul li:nth-child(4n+1) {background-color: #000;} */ /* 1부터 시작해서 4의배수 */
+        /* ul li:nth-child(3n) {width: 100px;} */
+        
+        ul li:nth-last-child(2) {background-color: aqua;}
+        ul li:nth-child(even) {background-color: pink;}
+        ul li:nth-child(odd) {background-color: gray;}
+        ul li:nth-child(3n) {border-width:3px;}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>제목</h1>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
+    <hr>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

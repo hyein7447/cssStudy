@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>float-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* 부모의 height는 주지않고 자식의 크기를 따라가게한다. */
+        .box {
+            background-color: pink;
+            overflow: hidden;
+        }
+        .box p {
+            width: 150px; height: 150px;
+            font-size: 5rem;
+        } /* 공통 */
+        .box p>nth-child(1) {
+            background-color: aqua;
+            float:left;
+        } /* 개별 */
+        .box p>nth-child(2) {
+            background-color: tomato;
+            float:left;
+        } /* 개별 */
+        .box p:nth-last-child(2) {
+            background-color: blue;
+            float: left;
+        }
+        .box .right {
+            float: right;
+        }
+        
+        .box p:nth-last-child(1) {
+            background-color: yellow;
+        }
+        .box p:last-child {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>A</p>
+        <p>B</p>
+        <div class="right">
+            <p>C</p>
+            <p>D</p>
+        </div>
+    </div>
+</body>
+</html>

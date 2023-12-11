@@ -10,4 +10,45 @@ header .nav a {
     padding: 5px 0 40px 0;
 }
 header a:nth-child(3) {margin-right: 0;}
-main {height: 100vh; background-color: aqua;}
+main {}
+main .contentTop {
+    height: 700px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 400px;
+    align-items: center;
+    border-top:1px solid #000;
+}
+main .contentTop .contentText {}
+main .contentTop .contentText h1 {
+    font-size: 3.75rem;
+    font-family: 'Kalnia', serif;
+}
+main .contentTop .contentText p {
+    font-size: 2rem;
+    padding: 15px 0 0 0;
+    float: right;
+}
+main .contentTop .contentImg {}
+main .contentTop .contentImg img {}
+main .contentBottom {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    margin: 100px 0;
+}
+main .contentBottom dl {}
+main .contentBottom dl dt:nth-child(1) {
+    padding: 0;
+}
+main .contentBottom dl dt{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 100px 0 10px 0;
+}
+main .contentBottom dl dd{
+    text-align: left;
+    line-height: 1.5;
+}

@@ -11,14 +11,12 @@ header .nav a {
     padding: 5px 0 40px 0;
 }
 header a:nth-child(3) {margin-right: 0;}
-main {
-    margin-top: 200px 0 0 0;
-    height: 1700px;
-}
+main {}
 main .contents {
     display: flex;
     justify-content: space-between;
     padding: 100px 420px 0 420px;
+    border-top:1px solid #000;
 }
 main .contents .contentImg {}
 main .contents .contentImg img {
@@ -57,7 +55,7 @@ main .contents .contentText .dogContent tbody tr th {
 }
 main .contents .contentText .dogContent tbody tr td {
     padding: 15px;
-    line-height: 2.9;
+    line-height: 3;
     font-size: 1.25rem;
     border-left: 1px solid #fff;
 }
@@ -99,7 +97,7 @@ main .contents2 .contentText2 .dogContent2 tbody tr th {
 }
 main .contents2 .contentText2 .dogContent2 tbody tr td {
     padding: 15px;
-    line-height: 2.9;
+    line-height: 3;
     font-size: 1.25rem;
     border-left: 1px solid #fff;
 }

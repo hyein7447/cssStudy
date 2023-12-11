@@ -11,9 +11,17 @@ header .nav a {
 }
 header a:nth-child(3) {margin-right: 0;}
 main {height: 100vh; background-color: tomato;}
-main h1 {}
-main .photo {
+main h1 {
+    text-align: center;
+    font-size: 3.125rem;
+}
+main .bg {
+    background-color: #aaa;
+}
+main .bg .photo {
+    width: 500px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
 }
-main .photo img {}
+main .bg .photo img {}

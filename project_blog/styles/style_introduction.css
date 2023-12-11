@@ -1,0 +1,51 @@
+/* introduction.html 전용 CSS */
+
+header .nav a {
+    color: #000;
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: inline-block;
+    /* border: 1px solid #fff; */
+    /* border-radius: 50px; */
+    padding: 5px 0 40px 0;
+}
+header a:nth-child(3) {margin-right: 0;}
+main {height: 100vh; background-color: yellow;}
+main .contents {}
+main .contents .contentImg {}
+main .contents .contentImg img {}
+main .contents .contentText {}
+main .contents .contentText .dogContent {
+    background-color: #000;
+    width: 30%;
+    margin: 50px auto 0;
+}
+main .contents .contentText .dogContent thead {
+    border-bottom:1px solid #000;
+}
+main .contents .contentText .dogContent thead tr {}
+main .contents .contentText .dogContent thead tr th {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+main .contents .contentText .dogContent thead tr th:nth-child(1){width: 100px;}
+main .contents .contentText .dogContent tbody {
+    background-color: #eee;
+}
+main .contents .contentText .dogContent tbody tr {
+}
+main .contents .contentText .dogContent tbody tr th {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 0 0 10px;
+}
+main .contents .contentText .dogContent tbody tr td {
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    border-left: 1px solid #fff;
+}

@@ -11,3 +11,9 @@ header .nav a {
 }
 header a:nth-child(3) {margin-right: 0;}
 main {height: 100vh; background-color: tomato;}
+main h1 {}
+main .photo {
+    display: flex;
+    flex-flow: row nowrap;
+}
+main .photo img {}

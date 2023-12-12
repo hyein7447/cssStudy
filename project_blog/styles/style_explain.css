@@ -17,6 +17,7 @@ main .contentTop {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 0 400px;
+    margin: 0 auto;
     align-items: center;
     border-top:1px solid #000;
 }
@@ -36,9 +37,11 @@ main .contentBottom {
     display: flex;
     flex-flow: column nowrap;
     align-items:center;
-    margin: 100px 0;
+    margin: 100px auto;
 }
-main .contentBottom dl {}
+main .contentBottom dl {
+    
+}
 main .contentBottom dl dt:nth-child(1) {
     padding: 0;
 }
@@ -51,4 +54,5 @@ main .contentBottom dl dt{
 main .contentBottom dl dd{
     text-align: left;
     line-height: 1.5;
+    
 }

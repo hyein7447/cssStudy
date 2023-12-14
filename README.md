@@ -64,3 +64,42 @@ overflow:hidden; 을 적용해서 float 오류 해결 가능.
 * 모든 html 공통으로 존재해야하는 HTML => Header, main(내용제거), Footer
 * CSS 공통영역 => reset, common.css(Header, main (내용제거), footer)
 * CSS 개별영역 => index.html, explain.html, introduction.html, Gallery.html의 main 내용 영역
+----
+## 공통영역 HTML,CSS
+
+- 모든 html 공통으로 존재해야하는 HTML-> header,footer (메인내용변경) footer
+- css 공통 영역 ->reset, common.css(header ,main ,footer)
+- css 개별영역 -> index.html, palyer,club 등의 main영역
+
+---
+
+# header 메뉴 만들기 +동적 기능 활용
+
+## position
+
+- 메뉴 - 서브 메뉴구조는 ul-li-ul-li 구조로 이루어져 있다.
+- 메뉴명은 gnb, 서브메뉴명은 lnb로 사용한다.
+- 서브 메뉴의 배치는 `position:absolute` 속성을 사용한다.
+- `absolute` 설정 시 반드시 디자인에 따라 가족 관계 부모 중 하나에 `relative`를 설정하며 좌표값 `left, right, top,bottom` 중 1~2개를 작성해야 한다.
+- 부모 크기 기준으로 동일한 크기를 설정할 때는 : `width:100%`
+- lin 서브메뉴 기준으로 내용에 맞춰 자동 설정 시에는 `width:max-content`
+
+## hover 동적기능 활용
+
+- header +sub 포함 모든 정적인 css 디자인이 끝난 후 기준
+1. 서브메뉴 숨기기 `display:none`
+2. 해당 서브메뉴의 부모 li에게 `:hover` 선택자 사용해서 마우스를 올렸을 때 라는 조건 생성하기
+3. 2번 선택자에서 이어서 `li:hover .lnb` 부모에 마우스를 올렸을 때 자식 서브메뉴가 ~라는 상황을 만들고
+4. lnb가 서브메뉴가 원래 가지던 `display`속성을 적용한다. (아래 5,6번 중 선택)
+5. lnb가`dispaly:block` 인 상태였다면 `block`값 되돌리기
+6. lnb가`dispaly:flex` 인 상태였다면 `flex`값 되돌리기
+
+---
+
+# position:sticky
+
+- 화면이 100vh 이상으로 스크롤이 생길 경우 -> 스크롤 했을 때 상단에 붙어있는 header를 만들 경우 사용하는 속성
+- skicky 뜻 (끈적거리다)
+- `position:skicky` 속성을 넣고 어떤 좌표부터 붙어있을 지 `left,right,top,bottom`중 1가지 속성을 적용한다.
+- `header` 의 세로 크기가 `height:100px`일 경우 내비게이션의 `height:50px`인데
+내비게이션부터 붙어있게 하고 싶다면 `position:sticky; top:-50으로 입력한다`

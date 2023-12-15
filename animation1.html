@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>animation-1</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .btn1 {
+            background-color: aqua; padding: 30px;
+            font-size: 1rem;
+            transition: all 0.5s 2s;
+            /* 뒤에있는 초는 딜레이속성 */
+            /* transition: background-color 1s;
+            transition: padding 1s;
+            transition: font-size 1.5s; */
+        }
+        .btn1:hover {background-color: red;
+            padding: 60px; font-size: 2rem;}
+            /* ----------transform */
+            .box {
+                margin: 10px;
+                width: 100px; height: 100px; 
+                background-color: tomato;
+            }
+            .box1 {transform: scaleX(2); transform-origin:left top;} 
+            /* 중심축이 가운데 기준으로 양쪽으로 커짐 
+            transform은 모든 옵션의 자식, 자손에게 까지 영향을 준다 ! */
+            .box2 {transform:rotate(60deg);}
+            .box3 {transform:skewY(20deg);}
+            .box4 {transform:translate(100px, 50px);} /* position의 relative 기능과 같다 */
+            .box5 {transform:scaleY(1.2) rotate(10deg) translateX(50px);}
+            .box6 {transform-origin: right bottom;
+                transform:translate(200px, 150px) scaleX(1) rotate(60deg);}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><button type="button" class="btn1">button</button></li>
+        <li><div class="box box1">A</div></li>
+        <li><div class="box box2">B</div></li>
+        <li><div class="box box3">C</div></li>
+        <li><div class="box box4">D</div></li>
+        <li><div class="box box5">E</div></li>
+        <li><div class="box box6">F</div></li>
+    </ul>
+</body>
+</html>

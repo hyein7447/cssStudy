@@ -1,0 +1,8 @@
+@keyframes translate {
+    0% {background-position-X:0;}
+    100% {background-position-X:999px;}
+}
+@keyframes rotate {
+    0% {transform: rotate(0);}
+    0% {transform: rotate(-360deg);}
+}
